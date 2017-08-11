@@ -824,7 +824,7 @@
                 <height>390</height>
                 <aligny>center</aligny>
                 <fadetime>FanartCrossFadeTime</fadetime>
-                <texture diffuse="cdart_diffuse.png" background="true">http://localhost:52307/getthumb&amp;title=$INFO[ListItem.Label]</texture>
+                <texture diffuse="cdart_diffuse.png" background="true">http://localhost:52307/getthumb&amp;title=$ESCINFO[ListItem.Label]</texture>
                 <include>PLDisc</include>
                 <visible>String.IsEmpty(ListItem.Art(discart))</visible>
             </control>

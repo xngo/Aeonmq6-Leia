@@ -93,7 +93,7 @@
                     <top>780</top>
                     <width>510</width>
                     <height>171</height>
-                    <texture background="true">http://localhost:52307/getpvrthumb&amp;title=$INFO[ListItem.Title]&amp;type=clearart</texture>
+                    <texture background="true">http://localhost:52307/getpvrthumb&amp;title=$ESCINFO[ListItem.Title]&amp;type=clearart</texture>
                     <fadetime>FanartCrossFadeTime</fadetime>
                     <aspectratio align="center" aligny="center">keep</aspectratio>
                     <visible>String.IsEmpty(ListItem.Art(clearart))</visible>

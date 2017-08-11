@@ -435,7 +435,7 @@
                     <top>63</top>
                     <width>580</width>
                     <height>315</height>
-                    <texture>http://localhost:52307/getthumb&amp;title=$INFO[Listitem.Title]</texture>
+                    <texture>http://localhost:52307/getthumb&amp;title=$ESCINFO[Listitem.Title]</texture>
                     <aspectratio>stretch</aspectratio>
                     <fadetime>FanartCrossFadeTime</fadetime>
                     <visible>Window.IsActive(TVChannels)</visible>
@@ -445,7 +445,7 @@
                     <top>63</top>
                     <width>580</width>
                     <height>315</height>
-                    <texture>http://localhost:52307/getpvrthumb&amp;title=$INFO[Listitem.Title]&amp;type=fanart</texture>
+                    <texture>http://localhost:52307/getpvrthumb&amp;title=$ESCINFO[Listitem.Title]&amp;type=fanart</texture>
                     <aspectratio>stretch</aspectratio>
                     <fadetime>FanartCrossFadeTime</fadetime>
                     <visible>Window.IsActive(TVChannels)</visible>

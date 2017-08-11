@@ -1185,7 +1185,7 @@
                         <height>525</height>
                         <fadetime>FanartCrossFadeTime</fadetime>
                         <aspectratio align="center" aligny="bottom">keep</aspectratio>
-                        <imagepath>http://localhost:52307/getthumb&amp;title=$INFO[ListItem.Label]</imagepath>
+                        <imagepath>http://localhost:52307/getthumb&amp;title=$ESCINFO[ListItem.Label]</imagepath>
                         <visible>Container.Content(directors)</visible>
                     </control>
                     <control type="multiimage">
@@ -1196,7 +1196,7 @@
                         <height>525</height>
                         <fadetime>FanartCrossFadeTime</fadetime>
                         <aspectratio align="center" aligny="center">scale</aspectratio>
-                        <imagepath>http://localhost:52307/getthumb&amp;title=$INFO[Container.FolderName] tvshow&amp;type=thumb</imagepath>
+                        <imagepath>http://localhost:52307/getthumb&amp;title=$ESCINFO[Container.FolderName] tvshow&amp;type=thumb</imagepath>
                         <visible>Container.Content(seasons)+String.Contains(ListItem.Label,all seasons)</visible>
                     </control>
                 </control>
@@ -1305,7 +1305,7 @@
                         <height>368</height>
                         <fadetime>FanartCrossFadeTime</fadetime>
                         <aspectratio align="center" aligny="center">scale</aspectratio>
-                        <imagepath>http://localhost:52307/getthumb&amp;title=$INFO[Container.FolderName] Artist&amp;type=thumb</imagepath>
+                        <imagepath>http://localhost:52307/getthumb&amp;title=$ESCINFO[Container.FolderName] Artist&amp;type=thumb</imagepath>
                         <visible>Container.Content(albums)+String.Contains(ListItem.Label,all albums)</visible>
                     </control>
                 </control>
@@ -1361,7 +1361,7 @@
                         <height>345</height>
                         <fadetime>FanartCrossFadeTime</fadetime>
                         <aspectratio align="center" aligny="center">scale</aspectratio>
-                        <imagepath>http://localhost:52307/getthumb&amp;title=$INFO[Container.FolderName] Artist&amp;type=thumb</imagepath>
+                        <imagepath>http://localhost:52307/getthumb&amp;title=$ESCINFO[Container.FolderName] Artist&amp;type=thumb</imagepath>
                         <visible>Container.Content(albums)+String.Contains(ListItem.Label,all albums)</visible>
                     </control>
                     <control type="image">
