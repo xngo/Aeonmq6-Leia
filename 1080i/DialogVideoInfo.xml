@@ -197,6 +197,19 @@
 				<visible>!String.Contains(ListItem.Path,videodb://movies/sets)</visible>
             </control>
             <control type="label">
+                <!-- My Rating -->
+                <left>885</left>
+                <top>120</top>
+                <height>60</height>
+                <width>190</width>
+                <align>right</align>
+                <aligny>center</aligny>
+                <font>Font_24A</font>
+                <label>$INFO[ListItem.UserRating,[COLOR=FF39ED92]My Rating : [/COLOR]]</label>
+                <textcolor>FFFFFAF0</textcolor>
+				<visible>!String.Contains(ListItem.Path,videodb://movies/sets)</visible>
+            </control>
+            <control type="label">
                 <!-- Genre -->
                 <left>330</left>
                 <top>154</top>
@@ -1215,6 +1228,11 @@
                             <onclick>SendClick(2003,6)</onclick>
                             <visible>!Skin.HasSetting(kioskininfo)</visible>
                         </item>
+						<item id="2">	
+							<label>38023</label>
+							<onclick>SendClick(2003,7)</onclick>
+							<visible>!Skin.HasSetting(kioskininfo)</visible>
+						</item>
                         <item id="3">
                             <!-- Start -->
                             <label>31700</label>
